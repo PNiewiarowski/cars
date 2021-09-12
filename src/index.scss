@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+:root {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+
+  @media screen and (min-width: 2160px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 4380px) {
+    font-size: 32px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

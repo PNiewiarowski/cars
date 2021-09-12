@@ -1,0 +1,41 @@
+.table {
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #ffffff;
+  border-collapse: separate;
+  border-spacing: 0 3px;
+
+  &__body {
+    tr{
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: #454B4F;
+      }
+    }
+  }
+
+  &__row {
+    background-color: #343A3F;
+  }
+
+  &__title,
+  &__cell {
+    text-align: left;
+    font-weight: 400;
+    padding: 1.33rem;
+  }
+
+  &__sign {
+    margin-left: 4px;
+    font-size: 0.8rem;
+  }
+
+  &__none {
+    margin-left: 4px;
+    font-size: 0.8rem;
+    color: transparent;
+  }
+}

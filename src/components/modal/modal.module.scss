@@ -1,0 +1,43 @@
+.modal {
+  width: 100%;
+  background-color: #2B2F35;
+  padding: 2rem;
+
+  @media screen and (min-width: 720px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1080px) {
+    width: 30%;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position:fixed;
+    top: 0;
+    background-color: #000000cc;
+  }
+
+  &__close {
+    font-size: 1.66rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: #df7575;
+  }
+
+  &__title {
+    color: #FFFFFF;
+    font-size: 2rem;
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
