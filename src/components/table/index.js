@@ -54,8 +54,8 @@ Table.Sign = function ({ status, ...rest }) {
   return (
     <span  {...rest}>
       {status === "none" && <AiOutlineMinus className={styles.table__none} />}
-      {status === "asc" && <AiFillCaretUp className={styles.table__sign} />}
-      {status === "desc" && <AiFillCaretDown className={styles.table__sign} />}
+      {status === "asc" && <AiFillCaretDown className={styles.table__sign} />}
+      {status === "desc" && <AiFillCaretUp className={styles.table__sign} />}
     </span>
   );
 }
