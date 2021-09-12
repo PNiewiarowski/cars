@@ -10,15 +10,11 @@
     width: 100%;
 
     @media screen and (min-width: 720px) {
-      width: 50%;
+      width: 66%;
     }
   
-    @media screen and (min-width: 1080px) {
-      width: 30%;
+    @media screen and (min-width: 1440px) {
+      width: 33%;
     }
-  
-    @media screen and (min-width: 3240px) {
-      width: 20%;
-    } 
   }
 }
