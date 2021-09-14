@@ -4,20 +4,20 @@ App: https://invisio-recruitment-task.netlify.app
 
 Code: https://github.com/PNiewiarowski/invisio-recruitment-task
 
-### Tabla | Pusta
-![Pusta tabela](screenshots/empty.png)
+### Table | Empty
+![Empty table](screenshots/empty.png)
 
-### Tabela | Dane
-![Tabela z danymi](screenshots/fed.png)
+### Table | Fed
+![Fed table](screenshots/fed.png)
 
-### Tabela | Sortowanie
-![Tabela posortowana](screenshots/sort_by_year.png)
+### Tabel | Sort
+![Sorted table](screenshots/sort_by_year.png)
 
-### Tabela | Pofiltrowana
+### Tabel | Filter
 ![Table pofiltrowana](screenshots/filter_by_model.png)
 
-### Modal | Dodawanie
-![Modal dodawnie](screenshots/add_modal.png)
+### Modal | Add
+![Add modal](screenshots/add_modal.png)
 
-### Modal | Edycja
-![Modal edycja](screenshots/edit_modal.png)
+### Modal | Edit
+![Edit modal](screenshots/edit_modal.png)
