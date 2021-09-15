@@ -10,10 +10,10 @@ Code: https://github.com/PNiewiarowski/invisio-recruitment-task
 ### Table | Fed
 ![Fed table](screenshots/fed.png)
 
-### Tabel | Sort
+### Table | Sort
 ![Sorted table](screenshots/sort_by_year.png)
 
-### Tabel | Filter
+### Table | Filter
 ![Table pofiltrowana](screenshots/filter_by_model.png)
 
 ### Modal | Add
