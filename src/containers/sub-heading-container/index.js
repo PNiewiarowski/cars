@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography } from "../../components";
 
-function SubHeadingLayout({ message }) {
+function SubHeadingContainer({ message }) {
   return (
     <Typography>
       <Typography.SubHeading>{message}</Typography.SubHeading>
@@ -9,4 +9,4 @@ function SubHeadingLayout({ message }) {
   );
 }
 
-export default SubHeadingLayout;
+export default SubHeadingContainer;

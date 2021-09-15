@@ -2,7 +2,7 @@ import React from "react";
 import { FaSearch } from "react-icons/fa";
 import { Form } from "../../components";
 
-function SearchLayout({ value, setValue }) {
+function SearchContainer({ value, setValue }) {
   return (
     <Form onSubmit={(event) => event.preventDefault()} >
       <Form.InputText
@@ -17,4 +17,4 @@ function SearchLayout({ value, setValue }) {
   );
 }
 
-export default SearchLayout;
+export default SearchContainer;

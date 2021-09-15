@@ -1,17 +1,18 @@
 import React from "react";
 import { createPortal } from "react-dom";
-import { AiFillCar, AiFillTrademarkCircle, AiFillCalendar, AiFillSave, AiFillDelete } from "react-icons/ai";
+import { BsPlus } from "react-icons/bs";
+import { AiFillTrademarkCircle, AiFillCalendar, AiFillCar } from "react-icons/ai";
 import { Form, Modal } from "../../components";
 
-function EditModalLayout({ handleEdit, handleDelete, handleClose, car, setCar }) {
+function AddModalContainer({ handleAdd, handleClose, car, setCar }) {
   return createPortal(
     <Modal.Container>
       <Modal>
         <Modal.Navbar>
-          <Modal.Title>Edytuj pojazd nr. {car.id} </Modal.Title>
+          <Modal.Title>Dodaj pojazd</Modal.Title>
           <Modal.Close onClick={handleClose} />
         </Modal.Navbar>
-        <Form onSubmit={handleEdit}>
+        <Form onSubmit={handleAdd}>
           <Form.InputText
             icon={<AiFillTrademarkCircle />}
             placeholder="Marka pojazdu..."
@@ -37,12 +38,7 @@ function EditModalLayout({ handleEdit, handleDelete, handleClose, car, setCar })
             required
           />
           <Form.Button variant="green">
-            <AiFillSave />
-          </Form.Button>
-        </Form>
-        <Form onSubmit={handleDelete}>
-          <Form.Button variant="red">
-            <AiFillDelete />
+            <BsPlus />
           </Form.Button>
         </Form>
       </Modal>
@@ -51,4 +47,4 @@ function EditModalLayout({ handleEdit, handleDelete, handleClose, car, setCar })
   );
 }
 
-export default EditModalLayout;
+export default AddModalContainer;

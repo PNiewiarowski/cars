@@ -2,7 +2,7 @@ import React from "react";
 import { BsPlus } from "react-icons/bs";
 import { Form } from "../../components";
 
-function AddLayout({ setValue }) {
+function AddContainer({ setValue }) {
   return (
     <Form onSubmit={(event) => event.preventDefault()} >
       <Form.Button variant="green" onClick={() => setValue(true)}>
@@ -12,4 +12,4 @@ function AddLayout({ setValue }) {
   );
 }
 
-export default AddLayout;
+export default AddContainer;

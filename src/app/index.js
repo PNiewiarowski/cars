@@ -3,13 +3,13 @@ import { useSelector, useDispatch } from "react-redux";
 import { carsAction } from "../reducers";
 import { carColumns } from "../utils/columns";
 import {
-  SearchLayout,
-  AddLayout,
-  AddModalLayout,
-  TableLayout,
-  EditModalLayout,
-  SubHeadingLayout
-} from "../layouts";
+  SearchContainer,
+  AddContainer,
+  AddModalContainer,
+  TableContainer,
+  EditModalContainer,
+  SubHeadingContainer
+} from "../containers";
 import { toastSuccess } from "../utils/toasts";
 import styles from "./app.module.scss";
 
@@ -55,7 +55,7 @@ function App() {
   return (
     <div className={styles.app}>
       {isAddOpen &&
-        <AddModalLayout
+        <AddModalContainer
           handleClose={() => {
             setIsAddOpen(false);
             clearCar()
@@ -66,7 +66,7 @@ function App() {
         />
       }
       {isEditOpen &&
-        <EditModalLayout
+        <EditModalContainer
           handleClose={() => {
             setIsEditOpen(false);
             clearCar();
@@ -79,13 +79,13 @@ function App() {
       }
       <div className={styles.app__container}>
         {!cars.length ?
-          <SubHeadingLayout message="Nie ma żadnych pojazdów w tabeli" /> :
+          <SubHeadingContainer message="Nie ma żadnych pojazdów w tabeli" /> :
           <Fragment>
-            <SearchLayout
+            <SearchContainer
               value={filter}
               setValue={setFilter}
             />
-            <TableLayout
+            <TableContainer
               data={memoCars}
               columns={memoCarsColumns}
               filterColumn={"model"}
@@ -95,7 +95,7 @@ function App() {
             />
           </Fragment>
         }
-        <AddLayout
+        <AddContainer
           setValue={setIsAddOpen}
         />
       </div>

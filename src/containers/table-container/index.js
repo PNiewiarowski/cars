@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useTable, useSortBy, useFilters } from "react-table";
 import { Table } from "../../components";
 
-function TableLayout({ columns, data, filterColumn, filter, setIsEditModalOpen, setCar }) {
+function TableContainer({ columns, data, filterColumn, filter, setIsEditModalOpen, setCar }) {
   const instance = useTable({ columns, data }, useFilters, useSortBy);
   const { getTableBodyProps, headerGroups, rows, prepareRow, setFilter } = instance;
 
@@ -52,4 +52,4 @@ function TableLayout({ columns, data, filterColumn, filter, setIsEditModalOpen, 
   );
 }
 
-export default TableLayout;
+export default TableContainer;
