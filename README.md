@@ -1,8 +1,4 @@
-# Invisio recruitment task
-
-App: https://invisio-recruitment-task.netlify.app
-
-Code: https://github.com/PNiewiarowski/invisio-recruitment-task
+# cars-table
 
 ### Table | Empty
 ![Empty table](screenshots/empty.png)
