@@ -1,5 +1,3 @@
-# cars-table
-
 ### Table | Empty
 ![Empty table](screenshots/empty.png)
 
