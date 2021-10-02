@@ -8,27 +8,27 @@ function EditModalContainer({ handleEdit, handleDelete, handleClose, car, setCar
     <Modal.Container>
       <Modal>
         <Modal.Navbar>
-          <Modal.Title>Edytuj pojazd nr. {car.id} </Modal.Title>
+          <Modal.Title>Edit car [ {car.id} ] </Modal.Title>
           <Modal.Close onClick={handleClose} />
         </Modal.Navbar>
         <Form onSubmit={handleEdit}>
           <Form.InputText
             icon={<AiFillTrademarkCircle />}
-            placeholder="Marka pojazdu..."
+            placeholder="Brand..."
             value={car.brand}
             onChange={(event) => setCar({ ...car, brand: event.target.value })}
             required
           />
           <Form.InputText
             icon={<AiFillCar />}
-            placeholder="Model pojazdu..."
+            placeholder="Model..."
             value={car.model}
             onChange={(event) => setCar({ ...car, model: event.target.value })}
             required
           />
           <Form.InputText
             icon={<AiFillCalendar />}
-            placeholder="Rok produkcji..."
+            placeholder="Year..."
             type="number"
             value={car.year}
             onChange={(event) => setCar({ ...car, year: event.target.value })}

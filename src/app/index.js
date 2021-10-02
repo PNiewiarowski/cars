@@ -31,7 +31,7 @@ function App() {
   const handleAdd = (event) => {
     event.preventDefault();
     dispatch(carsAction.addCar(car.brand, car.model, car.year));
-    toastSuccess("Udało się dodać pojazd do tabeli!");
+    toastSuccess("Car added correctly!");
     setIsAddOpen(false);
     clearCar();
   };
@@ -39,7 +39,7 @@ function App() {
   const handleDelete = (event) => {
     event.preventDefault();
     dispatch(carsAction.deleteCar(car.id));
-    toastSuccess("Udało się usunąć pojazd z tabeli!");
+    toastSuccess("Car deleted correctly!");
     setIsEditOpen(false);
     clearCar();
   };
@@ -47,7 +47,7 @@ function App() {
   const handleEdit = (event) => {
     event.preventDefault();
     dispatch(carsAction.editCar(car.id, car.brand, car.model, car.year));
-    toastSuccess("Udało się edytować pojazd!");
+    toastSuccess("Car edited correctly!");
     setIsEditOpen(false);
     clearCar();
   };
@@ -79,7 +79,7 @@ function App() {
       }
       <div className={styles.app__container}>
         {!cars.length ?
-          <SubHeadingContainer message="Nie ma żadnych pojazdów w tabeli" /> :
+          <SubHeadingContainer message="Table is empty..." /> :
           <Fragment>
             <SearchContainer
               value={filter}

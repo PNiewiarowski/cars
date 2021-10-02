@@ -4,7 +4,7 @@ const carColumns = [
     accessor: "id",
   },
   {
-    Header: "Marka",
+    Header: "Brand",
     accessor: "brand",
   },
   {
@@ -12,7 +12,7 @@ const carColumns = [
     accessor: "model",
   },
   {
-    Header: "Rok",
+    Header: "Year",
     accessor: "year",
   },
 ];

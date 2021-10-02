@@ -10,7 +10,7 @@ function SearchContainer({ value, setValue }) {
         icon={<FaSearch />}
         value={value}
         onChange={(event) => setValue(event.target.value)}
-        placeholder="Filtruj po MODELU pojazdu..."
+        placeholder="Find car..."
         type="text"
       />
     </Form >
